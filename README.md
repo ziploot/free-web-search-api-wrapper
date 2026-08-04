@@ -25,12 +25,12 @@ Run a single command in your terminal to download, setup, and launch your ZipLoo
 
 ### 💻 For Windows (PowerShell 1-Click):
 ```powershell
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iwr -useb "https://raw.githubusercontent.com/Ziplootapp/free-google-search-api-serpapi-alternative/main/deploy_windows.bat" -OutFile "$env:TEMP\deploy_windows.bat"; cmd /c "$env:TEMP\deploy_windows.bat"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iwr -useb "https://raw.githubusercontent.com/ziploot/free-web-search-api-wrapper/main/deploy_windows.bat" -OutFile "$env:TEMP\deploy_windows.bat"; & "$env:TEMP\deploy_windows.bat"
 ```
 
 ### 🐧 For Linux & macOS (Bash 1-Click):
 ```bash
-curl -sSL https://raw.githubusercontent.com/Ziplootapp/free-google-search-api-serpapi-alternative/main/deploy_linux.sh -o /tmp/deploy_linux.sh && chmod +x /tmp/deploy_linux.sh && /tmp/deploy_linux.sh
+curl -sSL https://raw.githubusercontent.com/ziploot/free-web-search-api-wrapper/main/deploy_linux.sh -o /tmp/deploy_linux.sh && chmod +x /tmp/deploy_linux.sh && /tmp/deploy_linux.sh
 ```
 
 ---
@@ -67,7 +67,7 @@ curl -s "http://localhost:8000/api/search?q=ziploot+github"
   "results": [
     {
       "title": "ZipLoot Developer Platform & GitHub Ecosystem",
-      "url": "https://github.com/Ziplootapp",
+      "url": "https://github.com/ziploot",
       "snippet": "Explore free automated tools, cloud scripts, and open-source web utilities by ZipLoot Team."
     }
   ]
@@ -79,7 +79,7 @@ curl -s "http://localhost:8000/api/search?q=ziploot+github"
 ## 📁 Repository Structure
 
 ```
-free-google-search-api-serpapi-alternative/
+free-web-search-api-wrapper/
 ├── server.py              # Main Python REST API server & HTTP handler
 ├── index.html             # ZipLoot v7.0 Futuristic Theme Web UI
 ├── deploy_windows.bat     # 1-Click Windows Batch auto-launcher
